@@ -9,14 +9,6 @@ def printSolution(board):
 		for j in range(N):
 			print (board[i][j],end=' ')
 		print()
-
-
-# A utility function to check if a queen can
-# be placed on board[row][col]. Note that this
-# function is called when "col" queens are
-# already placed in columns from 0 to col -1.
-# So we need to check only left side for
-# attacking queens
 def isSafe(board, row, col):
 
 	# Check this row on left side
@@ -63,14 +55,6 @@ def solveNQUtil(board, col):
 	# this column col then return false
 	return False
 
-# This function solves the N Queen problem using
-# Backtracking. It mainly uses solveNQUtil() to
-# solve the problem. It returns false if queens
-# cannot be placed, otherwise return true and
-# placement of queens in the form of 1s.
-# note that there may be more than one
-# solutions, this function prints one of the
-# feasible solutions.
 def solveNQ():
 	board = [ [0, 0, 0, 0],
 			[0, 0, 0, 0],
@@ -87,5 +71,3 @@ def solveNQ():
 
 # driver program to test above function
 solveNQ()
-
-# This code is contributed by Divyanshu Mehta
