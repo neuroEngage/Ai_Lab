@@ -86,6 +86,3 @@ if __name__ == '__main__':
 			[0, 5, 7, 9, 0]]
 
 	g.primMST()
-
-
-# Contributed by Divyanshu Mehta
